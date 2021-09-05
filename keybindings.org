@@ -2,16 +2,18 @@
 #+description: Somewhere I can save the keybindings I use most around certain apps.
 #+author: Mark Caple
 
-* Introduction
-This is where I will maintain all the useful keybindings that I find along the way
+** Introduction
+This is where I will maintain all the useful keybindings that I find along the way. It is also a first attempt at using org Mode
 
-* Github
+** Github
 Not really keybindings but how to configure any repository with a token based system. As this org file itself
 will go into the repository it feels like an OK place to put it. Maybe it will be moved later.
 
 Github can be accessed using a global cache app, we will use gh at [[https://github.com/cli/cli#installation][GitHub - cli/cli: GitHub’s official command line tool]]
 
-`gh auth login`
+#+begin_src
+gh auth login
+#+end_src
 
 - [ ] After running this you will be asked if you are committing to Github.com or enterprise. Select Github.com *doh*.
 - [ ] Now select HTTPS.
@@ -29,54 +31,65 @@ Github can be accessed using a global cache app, we will use gh at [[https://git
 
 *Make sure to copy this token wisely and paste into the gh command from above as you will not see it again*
 
-* VSCodium
+** VSCodium
 Some VSCodium stuff
 
-* Vim
+** Vim
 Some vim stuff
 
-* Emacs
+** Emacs
 
-** Screen
+*** Screen
 C-x C-+ - Increase font size
 C-x C-- - Decrease font size
 
-* Magit
+** Magit
 Getting started [[https://magit.vc/][It's Magit! A Git Porcelain inside Emacs]]
+
+Magit introduction and Demonstration [[https://www.youtube.com/watch?v=vQO7F2Q9DwA][Magit Introduction and Demonstration - YouTube]]
 
 Good use within emacs [[https://www.youtube.com/watch?v=D1SJ6mFWYyA][Productive Emacs: Magit - YouTube]]
 Which also references [[https://git-scm.com/book/en/v2][Git - Book]]
 
-Magit introduction and Demonstration [[https://www.youtube.com/watch?v=vQO7F2Q9DwA][Magit Introduction and Demonstration - YouTube]]
-
 *Any of the git options can be toggled an option greyed out is an option that is not being sent to git*
 
-** Status
-C-x-g - Git status equivalent
+*** Status
+SP-g-g (C-x-g) - Git status equivalent
+SP-g-G - Git status here
 
-** Diff
+*** Diff
 TAB - View diff
 
-** Commit
+*** Commit
 Hitting commit brings up a popup where we can defined what are we want for commit, such as -a for commit --all
 
 Once the options are selected we need to perform an action which is c for Commit
 
+After writing our commit message we hit C-c C-c to do the actual comit
+
 /Once you are happy hitting C-t will save the options you have made as the default/
 
-** Init
+*** Push
+P - will give options for push
+
+If a push fails, simply hit the $ sign to see what it was
+
+*** Init
 When you do a status and there is not git folder Magit will ask if one should be created, so you can say yes
 
-** Help
+*** Fetch
+SH-f - fetch any outstanding changes not local
+
+*** Help
 ? - will show help
 
-** Refresh status when changed outside emacs
+*** Refresh status when changed outside emacs
 g - refresh current buffer if you change something outside Emacs
 G - refresh all Magit buffers
 
 /like org mode TAB will collapse sections within magit/
 
-* Org Mode
+** Org Mode
 
 Outline, note taking, todo list utiltyA
 
@@ -88,7 +101,10 @@ Lists are unordered with - or + and ordered with number
 
 C-<return> gives you whatever you are doing on this line on the next
 
-** Snippets
+*** Code block
+C-c C-, - hitting s for source
+
+*** Snippets
 SPC-i-s - *i*insert *s*nippet
 
 For example if we chose bang we would get first line of typical bash file as below
@@ -100,17 +116,17 @@ licence - MIT etc licencing
 time - current time
 pi - insert pi
 
-** Schedule
+*** Schedule
 
 /Alt-x org-schedule to read about it/
 
 SP-m-d-s - *m*ode *d*ate *s*chedule see [[https://youtu.be/34zODp_lhqg?list=PLyy8KUDC8P7X6YkegqrnEnymzMWCNB4bN&t=1025][Org Mode Basics In Doom Emacs - YouTube]]
 
-*** TODO example 1
-*** IDEA
+**** TODO example 1
+**** IDEA
 SCHEDULED: <2021-09-05 Sun 16:00>
 
-** Todo
+*** Todo
 Typing TODO will create a todo item in a heading
 
 remember to use C-<Return> for another todo
@@ -119,7 +135,7 @@ SH-LA - remove todo
 SH-RA - make todo
 SPC-m-t - *m*ode *t*oggle (allows switching to TODO, IDEA, KILL, etc) see[[https://youtu.be/34zODp_lhqg?list=PLyy8KUDC8P7X6YkegqrnEnymzMWCNB4bN&t=1011][ Org Mode Basics In Doom Emacs - YouTube]]
 
-** Checkbox
+*** Checkbox
 [ ] Creates a checkbox. In a list remember to use C-<Enter> so that it repeats the checkbox on next line
 
 - [ ] Eggs
@@ -128,7 +144,7 @@ SPC-m-t - *m*ode *t*oggle (allows switching to TODO, IDEA, KILL, etc) see[[https
 
 You can create a running total with *[/]* or *[%]* as below
 
-*** Example count
+**** Example count
 
 [0/3]
 
@@ -138,7 +154,7 @@ You can create a running total with *[/]* or *[%]* as below
 
 /Hitting RET will toggle checkbox, you could also use emacs C-c C-c /
 
-*** Example percent
+**** Example percent
 
 [33%]
 
@@ -148,14 +164,14 @@ You can create a running total with *[/]* or *[%]* as below
 
 /Hitting RET will toggle checkbox, you could also use emacs C-c C-c /
 
-** Agenda
+*** Agenda
 SPC-o-A - *o*pen *A*genda see[[https://youtu.be/34zODp_lhqg?list=PLyy8KUDC8P7X6YkegqrnEnymzMWCNB4bN&t=1148][ Org Mode Basics In Doom Emacs - YouTube]]
 
 /need to put the document we are working on in the agenda/
 
 C-c-[ - put file at the front of the agenda
 
-** Tables
+*** Tables
 Start typing using | to separate columns
 
 | Name      |   Phone | Age |
@@ -183,7 +199,7 @@ Alt-SH-k - delete row
 Alt-SH-l - create column to left of current
 Alt-SH-h - delete column
 
-** Editing
+*** Editing
 v-a-e - *v*isual *a*round *e*lement
 v-a-R - *v*isual *a*round *r*egion
 d-a-e - *d*elete *a*round *e*lement
@@ -191,13 +207,13 @@ d-a-R - *d*elete *a*round *r*egion
 y-i-R - *y*ank *i*nner *r*egion
 
 
-** Motion/Navigation
+*** Motion/Navigation
 h, j, k, l - navigate
 g-[j,k] - goto next/previous fold at same level
 g-h - go out one level
 +g-[h,l] - goto next/previous child at same level+
 
-** Folds
+*** Folds
 TAB - fold line
 SH-TAB - fold entire doco
 z-c - Fold*z* *c*lose
@@ -205,10 +221,10 @@ z-o - Fold*z* *o*pen
 z-M - Fold*z* *m*imimise
 z-R - Fold*z* *r*eopen
 
-** Help
+*** Help
 Alt-x ord-info : General help
 
-** Headings
+*** Headings
 SP-m-h - *m*odulate a *h*eading
 Alt-h - Move heading left
 Alt-l - Move heading right
@@ -216,34 +232,34 @@ Alt-j - Move heading down
 Alt-k - Move heading up
 Alt-SH-[h,j,k,l] - Move without pulling the rest of the tree
 
-** Lists
+*** Lists
 SP-m-i - [m]odulate an [i]tem
 C-RET - will continue list
 
-** Sources
+*** Sources
 
-*** Distrotube
+**** Distrotube
 
 [[https://www.youtube.com/watch?v=34zODp_lhqg&list=PLyy8KUDC8P7X6YkegqrnEnymzMWCNB4bN&index=3][Org Mode Basics In Doom Emacs - YouTube]]
 
-*** Thoughtbot
+**** Thoughtbot
 
 [[https://www.youtube.com/watch?v=SzA2YODtgK4][Getting Started With Org Mode - YouTube]]
 
-* Doom
+** Doom
 If you make changes to config.el then you do not need to do a "doom sync"
 but if you change package.el or init.el you do need to.
 
-** Emacs
+*** Emacs
 SP :  - Emacs M-x
     You can start typing and you will see a list such as link
 
-** Help
+*** Help
 SP-h - Bring up help
 SP-h-d-s - Help search documentation
 SP-h-p - help Doom packages
 
-** Windows
+*** Windows
 SP-w-v - Split vertical   (emacs equivalent :vs)
 SP-w-s - Horizontal split
 SP-w-c - Close
@@ -256,20 +272,20 @@ SP-w < - Move window right edge left
 SP-w + - Move window bottom down
 SP-w - - Move window bottom up
 
-** Projects
+*** Projects
 SP-p-p - Open up a project
 SP-p-o - Open through tree
 
-** Files
+*** Files
 SP-. - Open up a file (usually not in a project)
 
-** Links
+*** Links
 SP-m-l-c - *m*ake *l*ink from *c*lipboard
 
-** Bookmarks
+*** Bookmarks
 SP-RET - Goto or create bookmarks
 
-** Buffer
+*** Buffer
 These are placeholders for things. Everytime you open a file it has a buffer or special place.
 Not just files have buffers, the sidebar side viewer has a buffer, a scratchpad, email client, a shell
 
@@ -286,11 +302,11 @@ SP-b-N - New buffer
 SP-b-s - save buffer
 SP-b-k - kill buffer
 
-** Sources
+*** Sources
 
-*** Distrotube
+**** Distrotube
 
-**** [[https://www.youtube.com/watch?v=dr_iBj91eeI&list=PLyy8KUDC8P7X6YkegqrnEnymzMWCNB4bN&index=1][Doom Emacs - Getting Started - YouTube]]
+***** [[https://www.youtube.com/watch?v=dr_iBj91eeI&list=PLyy8KUDC8P7X6YkegqrnEnymzMWCNB4bN&index=1][Doom Emacs - Getting Started - YouTube]]
     - [ ] Magit
     - [ ] Org Mode
     - [ ] MU4e (email client)
