@@ -61,13 +61,15 @@ SP-g-G - Git status here
 TAB - View diff
 
 *** Commit
-Hitting commit brings up a popup where we can defined what are we want for commit, such as -a for commit --all
+Hitting commit brings up a popup where we can define how we want for commit, for example
+
+-a - commit --all
 
 Once the options are selected we need to perform an action which is c for Commit
 
 After writing our commit message we hit C-c C-c to do the actual comit
 
-/Once you are happy hitting C-t will save the options you have made as the default/
+/It is possible to hit C-t to save the options we have made as the default/
 
 *** Push
 P - will give options for push
@@ -91,7 +93,7 @@ G - refresh all Magit buffers
 
 ** Org Mode
 
-Outline, note taking, todo list utiltyA
+Outline, note taking, todo list utilty
 
 [[https://orgmode.org/quickstart.html][Quickstart | Org mode]]
 
@@ -103,6 +105,8 @@ C-<return> gives you whatever you are doing on this line on the next
 
 *** Code block
 C-c C-, - hitting s for source
+
+This is equivalent to *snippets* for code
 
 *** Snippets
 SPC-i-s - *i*insert *s*nippet
