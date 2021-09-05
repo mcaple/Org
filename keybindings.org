@@ -1,0 +1,302 @@
+#+title: Keybindings
+#+description: Somewhere I can save the keybindings I use most around certain apps.
+#+author: Mark Caple
+
+* Introduction
+This is where I will maintain all the useful keybindings that I find along the way
+
+* Github
+Not really keybindings but how to configure any repository with a token based system. As this org file itself
+will go into the repository it feels like an OK place to put it. Maybe it will be moved later.
+
+Github can be accessed using a global cache app, we will use gh at [[https://github.com/cli/cli#installation][GitHub - cli/cli: GitHub’s official command line tool]]
+
+`gh auth login`
+
+- [ ] After running this you will be asked if you are committing to Github.com or enterprise. Select Github.com *doh*.
+- [ ] Now select HTTPS.
+- [ ] Say yes to authenticate Git with your GitHub credentials.
+- [ ] For the moment select 'Paste an authentication token'.
+- [ ] For this log into github click on your profile then goto to
+    Settings->Developer Settings->Personal access tokens->Generate a personal accesstoken.
+- [ ] Enter your password.
+- [ ] When you are asked what the token is for put something that makes sense to you like 'github access'
+- [ ] Select an expiration period you are happy with, typically a year for me.
+- [ ] Checkmark repo scope
+- [ ] Checkmark workflow scope
+- [ ] Checkmark read:org scope
+- [ ] Checkmark delete repo scope
+
+*Make sure to copy this token wisely and paste into the gh command from above as you will not see it again*
+
+* VSCodium
+Some VSCodium stuff
+
+* Vim
+Some vim stuff
+
+* Emacs
+
+** Screen
+C-x C-+ - Increase font size
+C-x C-- - Decrease font size
+
+* Magit
+Getting started [[https://magit.vc/][It's Magit! A Git Porcelain inside Emacs]]
+
+Good use within emacs [[https://www.youtube.com/watch?v=D1SJ6mFWYyA][Productive Emacs: Magit - YouTube]]
+Which also references [[https://git-scm.com/book/en/v2][Git - Book]]
+
+Magit introduction and Demonstration [[https://www.youtube.com/watch?v=vQO7F2Q9DwA][Magit Introduction and Demonstration - YouTube]]
+
+*Any of the git options can be toggled an option greyed out is an option that is not being sent to git*
+
+** Status
+C-x-g - Git status equivalent
+
+** Diff
+TAB - View diff
+
+** Commit
+Hitting commit brings up a popup where we can defined what are we want for commit, such as -a for commit --all
+
+Once the options are selected we need to perform an action which is c for Commit
+
+/Once you are happy hitting C-t will save the options you have made as the default/
+
+** Init
+When you do a status and there is not git folder Magit will ask if one should be created, so you can say yes
+
+** Help
+? - will show help
+
+** Refresh status when changed outside emacs
+g - refresh current buffer if you change something outside Emacs
+G - refresh all Magit buffers
+
+/like org mode TAB will collapse sections within magit/
+
+* Org Mode
+
+Outline, note taking, todo list utiltyA
+
+[[https://orgmode.org/quickstart.html][Quickstart | Org mode]]
+
+If you cannot remember a keybinding you can hit Alt-x org-toggle-item for example and you will see binding.
+
+Lists are unordered with - or + and ordered with number
+
+C-<return> gives you whatever you are doing on this line on the next
+
+** Snippets
+SPC-i-s - *i*insert *s*nippet
+
+For example if we chose bang we would get first line of typical bash file as below
+
+#!/usr/bin/env bash
+
+other useful
+licence - MIT etc licencing
+time - current time
+pi - insert pi
+
+** Schedule
+
+/Alt-x org-schedule to read about it/
+
+SP-m-d-s - *m*ode *d*ate *s*chedule see [[https://youtu.be/34zODp_lhqg?list=PLyy8KUDC8P7X6YkegqrnEnymzMWCNB4bN&t=1025][Org Mode Basics In Doom Emacs - YouTube]]
+
+*** TODO example 1
+*** IDEA
+SCHEDULED: <2021-09-05 Sun 16:00>
+
+** Todo
+Typing TODO will create a todo item in a heading
+
+remember to use C-<Return> for another todo
+
+SH-LA - remove todo
+SH-RA - make todo
+SPC-m-t - *m*ode *t*oggle (allows switching to TODO, IDEA, KILL, etc) see[[https://youtu.be/34zODp_lhqg?list=PLyy8KUDC8P7X6YkegqrnEnymzMWCNB4bN&t=1011][ Org Mode Basics In Doom Emacs - YouTube]]
+
+** Checkbox
+[ ] Creates a checkbox. In a list remember to use C-<Enter> so that it repeats the checkbox on next line
+
+- [ ] Eggs
+- [ ] Cash
+- [ ] Beer
+
+You can create a running total with *[/]* or *[%]* as below
+
+*** Example count
+
+[0/3]
+
+- [ ] One
+- [ ] Two
+- [ ] Three
+
+/Hitting RET will toggle checkbox, you could also use emacs C-c C-c /
+
+*** Example percent
+
+[33%]
+
+- [X] One
+- [ ] Two
+- [ ] Three
+
+/Hitting RET will toggle checkbox, you could also use emacs C-c C-c /
+
+** Agenda
+SPC-o-A - *o*pen *A*genda see[[https://youtu.be/34zODp_lhqg?list=PLyy8KUDC8P7X6YkegqrnEnymzMWCNB4bN&t=1148][ Org Mode Basics In Doom Emacs - YouTube]]
+
+/need to put the document we are working on in the agenda/
+
+C-c-[ - put file at the front of the agenda
+
+** Tables
+Start typing using | to separate columns
+
+| Name      |   Phone | Age |
+| Johnathan | 0102345 |  29 |
+
+/C-Return will create another row/
+
+SPC-m-b-- - *m*ode *b*anner in the row you want to make banner, as below
+
+| Name      |   Phone | Age |
+|-----------+---------+-----|
+| Johnathan | 0102345 |  29 |
+
+SH-RET - duplicate a column
+
+| Name      |   Phone | Age |
+|-----------+---------+-----|
+| Johnathan | 0102345 |  29 |
+| Johnathan |         |     |
+
+Alt-[j,k] - moves rows around
+Alt-[h,l] - moves columns around
+Alt-SH-j - create new row above current
+Alt-SH-k - delete row
+Alt-SH-l - create column to left of current
+Alt-SH-h - delete column
+
+** Editing
+v-a-e - *v*isual *a*round *e*lement
+v-a-R - *v*isual *a*round *r*egion
+d-a-e - *d*elete *a*round *e*lement
+d-a-R - *d*elete *a*round *r*egion
+y-i-R - *y*ank *i*nner *r*egion
+
+
+** Motion/Navigation
+h, j, k, l - navigate
+g-[j,k] - goto next/previous fold at same level
+g-h - go out one level
++g-[h,l] - goto next/previous child at same level+
+
+** Folds
+TAB - fold line
+SH-TAB - fold entire doco
+z-c - Fold*z* *c*lose
+z-o - Fold*z* *o*pen
+z-M - Fold*z* *m*imimise
+z-R - Fold*z* *r*eopen
+
+** Help
+Alt-x ord-info : General help
+
+** Headings
+SP-m-h - *m*odulate a *h*eading
+Alt-h - Move heading left
+Alt-l - Move heading right
+Alt-j - Move heading down
+Alt-k - Move heading up
+Alt-SH-[h,j,k,l] - Move without pulling the rest of the tree
+
+** Lists
+SP-m-i - [m]odulate an [i]tem
+C-RET - will continue list
+
+** Sources
+
+*** Distrotube
+
+[[https://www.youtube.com/watch?v=34zODp_lhqg&list=PLyy8KUDC8P7X6YkegqrnEnymzMWCNB4bN&index=3][Org Mode Basics In Doom Emacs - YouTube]]
+
+*** Thoughtbot
+
+[[https://www.youtube.com/watch?v=SzA2YODtgK4][Getting Started With Org Mode - YouTube]]
+
+* Doom
+If you make changes to config.el then you do not need to do a "doom sync"
+but if you change package.el or init.el you do need to.
+
+** Emacs
+SP :  - Emacs M-x
+    You can start typing and you will see a list such as link
+
+** Help
+SP-h - Bring up help
+SP-h-d-s - Help search documentation
+SP-h-p - help Doom packages
+
+** Windows
+SP-w-v - Split vertical   (emacs equivalent :vs)
+SP-w-s - Horizontal split
+SP-w-c - Close
+SP-w-q - Quit, same as close I think
+SP-w-w - Switch between windows toggling
+SP-w-[h,j,k,l] - Switch using arrow VIM keys
+SP-w = - Make all windows equal size
+SP-w > - Move window  right edge right
+SP-w < - Move window right edge left
+SP-w + - Move window bottom down
+SP-w - - Move window bottom up
+
+** Projects
+SP-p-p - Open up a project
+SP-p-o - Open through tree
+
+** Files
+SP-. - Open up a file (usually not in a project)
+
+** Links
+SP-m-l-c - *m*ake *l*ink from *c*lipboard
+
+** Bookmarks
+SP-RET - Goto or create bookmarks
+
+** Buffer
+These are placeholders for things. Everytime you open a file it has a buffer or special place.
+Not just files have buffers, the sidebar side viewer has a buffer, a scratchpad, email client, a shell
+
+SP-b-b (SP ,) - List buffers I have dealt with in the workspace we've been working on
+SP-b-B (SP <) - show all buffers
+    when you look at all buffers you will see some with asterisks they are things like
+        scratch - somewhere to doodle
+        Messages - stuff about what has happened within doom emacs
+
+    *A single SP* now will reveal even more buffers. Things like neo tree
+SP-b-n - Next buffer
+SP-b-N - New buffer
+    when we have a new buffer we need to put something in it so we copuld use SP . to select a file
+SP-b-s - save buffer
+SP-b-k - kill buffer
+
+** Sources
+
+*** Distrotube
+
+**** [[https://www.youtube.com/watch?v=dr_iBj91eeI&list=PLyy8KUDC8P7X6YkegqrnEnymzMWCNB4bN&index=1][Doom Emacs - Getting Started - YouTube]]
+    - [ ] Magit
+    - [ ] Org Mode
+    - [ ] MU4e (email client)
+    - [ ] eww (web browser)
+    - [ ] Haskell
+
+[[https://www.youtube.com/watch?v=F1iaskxcLNA&list=PLyy8KUDC8P7X6YkegqrnEnymzMWCNB4bN&index=2][* Bookmarks, Buffers and Windows in Doom Emacs - YouTube]]
+
+    - [ ] Neotree
