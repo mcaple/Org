@@ -1,8 +1,11 @@
-#+title: Keybindings
+#+title: Keybindings.ord
 #+description: Somewhere I can save the keybindings I use most around certain apps.
 #+author: Mark Caple
 
 ** Introduction
+:PROPERTIES:
+:ID:       3bcfb841-a0f2-413c-beec-46b529371c77
+:END:
 This is where I will maintain all the useful keybindings that I find along the way. It is also a first attempt at using org Mode
 
 ** Github
@@ -31,17 +34,37 @@ gh auth login
 
 *Make sure to copy this token wisely and paste into the gh command from above as you will not see it again*
 
+Will switch to this [[https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh][Connecting to GitHub with SSH - GitHub Docs]]
+
 ** VSCodium
 Some VSCodium stuff
 
 ** Vim
 Some vim stuff
 
+** Undo/Redo
+u - undo
+C-R (:redo) - redo
+
 ** Emacs
+
+*** Whitespace-mode
+Alt-x whitespace-mode - toggle for buffer, *does nothing in org mode*
 
 *** Screen
 C-x C-+ - Increase font size
 C-x C-- - Decrease font size
+
+*** Lisp
+[[http://www.emacslife.com/read-lisp-tweak-emacs/beginner-1-try-emacs-lisp.html]["How can I try Emacs Lisp code?"]]
+
+*** Packages
+**** Deft
+SP-n-d - *n*otes *d*eft
+
+/TODO: Looks like you can search across multiple org files super quick and maybe split them for blogs etc, that way./
+
+[[https://jonathanchu.is/posts/setting-up-deft-mode-in-emacs-with-org-mode/][Setting Up Deft Mode in Emacs with Org-Mode · jonathanchu.is]]
 
 ** Magit
 Getting started [[https://magit.vc/][It's Magit! A Git Porcelain inside Emacs]]
@@ -61,7 +84,7 @@ SP-g-G - Git status here
 TAB - View diff
 
 *** Commit
-Hitting commit brings up a popup where we can define how we want for commit, for example
+Hitting commit brings up a popup where we can define how we want to commit, for example
 
 -a - commit --all
 
@@ -96,6 +119,8 @@ G - refresh all Magit buffers
 Outline, note taking, todo list utilty
 
 [[https://orgmode.org/quickstart.html][Quickstart | Org mode]]
+
+[[https://lucidmanager.org/productivity/emacs-for-distraction-free-writing/][Emacs for Distraction-Free Writing]]
 
 If you cannot remember a keybinding you can hit Alt-x org-toggle-item for example and you will see binding.
 
@@ -210,7 +235,6 @@ d-a-e - *d*elete *a*round *e*lement
 d-a-R - *d*elete *a*round *r*egion
 y-i-R - *y*ank *i*nner *r*egion
 
-
 *** Motion/Navigation
 h, j, k, l - navigate
 g-[j,k] - goto next/previous fold at same level
@@ -254,6 +278,8 @@ C-RET - will continue list
 If you make changes to config.el then you do not need to do a "doom sync"
 but if you change package.el or init.el you do need to.
 
+FAQs - [[https://github.com/hlissner/doom-emacs/blob/develop/docs/faq.org#why-wsbutler-over-delete-trailing-whitespace-or-whitespace-cleanup][doom-emacs/faq.org at develop · hlissner/doom-emacs · GitHub]]
+
 *** Emacs
 SP :  - Emacs M-x
     You can start typing and you will see a list such as link
@@ -277,14 +303,17 @@ SP-w + - Move window bottom down
 SP-w - - Move window bottom up
 
 *** Projects
-SP-p-p - Open up a project
+SP-p-p - Switch to project
 SP-p-o - Open through tree
 
 *** Files
 SP-. - Open up a file (usually not in a project)
+SP-o-p - Open in sidebar (treemacs at the moment)
 
 *** Links
-SP-m-l-c - *m*ake *l*ink from *c*lipboard
+SP-m-l-c - *m*ode *l*ink from *c*lipboard
+SP-m-l-i - *m*ode *l*ink *i*ndex    ( index/store a link in file so it can be later linked )
+SP-m-l-l - *m*ode *l*ink *l*ink     ( link the link )
 
 *** Bookmarks
 SP-RET - Goto or create bookmarks
