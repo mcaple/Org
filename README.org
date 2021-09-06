@@ -2,4 +2,7 @@
 #+description: A place to try to sort the woods from the trees or at least record things most useful in my workflow.
 #+author: Mark Caple
 
-[[org:keybindings.org][Keybindings]]
+** Introduction
+A place to try to sort the woods from the trees or at least record things most useful in my workflow.
+
+[[https://github.com/mcaple/Org/blob/main/keybindings.org][1. Keybindings]]

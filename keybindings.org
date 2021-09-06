@@ -1,11 +1,8 @@
-#+title: Keybindings.ord
+#+title: Keybindings.org
 #+description: Somewhere I can save the keybindings I use most around certain apps.
 #+author: Mark Caple
 
 ** Introduction
-:PROPERTIES:
-:ID:       3bcfb841-a0f2-413c-beec-46b529371c77
-:END:
 This is where I will maintain all the useful keybindings that I find along the way. It is also a first attempt at using org Mode
 
 ** Github
