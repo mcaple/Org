@@ -1,0 +1,9 @@
+#+title: Python.org
+#+description: Somewhere I can save the keybindings I use most around certain apps.
+#+author: Mark Caple
+
+** Introduction
+This is where I will maintain all the useful stuff about Python for me
+
+** Itertools
+[[https://www.youtube.com/watch?v=Qu3dThVy6KQ][Python Tutorial: Itertools Module - Iterator Functions for Efficient Looping ...]]

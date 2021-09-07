@@ -36,6 +36,12 @@ Will switch to this [[https://docs.github.com/en/github/authenticating-to-github
 ** VSCodium
 Some VSCodium stuff
 
+*** Folding
+[[https://towardsdatascience.com/3-easy-steps-to-folding-docstrings-in-vscode-fbb64573611b][3 Easy Steps to Folding Docstrings in VSCode | by Graham Harrison | Towards D...]]
+
+*** Magit
+[[https://www.youtube.com/watch?v=kDISNtPYhjk][VSCode Productivity tips: committing code with the Magit plugin - YouTube]]
+
 ** Vim
 Some vim stuff
 
@@ -70,6 +76,7 @@ Magit introduction and Demonstration [[https://www.youtube.com/watch?v=vQO7F2Q9D
 
 Good use within emacs [[https://www.youtube.com/watch?v=D1SJ6mFWYyA][Productive Emacs: Magit - YouTube]]
 Which also references [[https://git-scm.com/book/en/v2][Git - Book]]
+[[https://opensource.com/article/19/1/how-use-magit][How to use Magit to manage Git projects | Opensource.com]]
 
 *Any of the git options can be toggled an option greyed out is an option that is not being sent to git*
 
@@ -124,6 +131,12 @@ If you cannot remember a keybinding you can hit Alt-x org-toggle-item for exampl
 Lists are unordered with - or + and ordered with number
 
 C-<return> gives you whatever you are doing on this line on the next
+
+*** Static site generators
+Eventually will use one of these [[https://orgmode.org/worg/org-blog-wiki.html][Blogs and Wikis with Org]] A
+
+This is in the running [[https://ox-hugo.scripter.co/][ox-hugo - Org to Hugo exporter]]
+I do like this for generating Gatsby site also [[https://github.com/orgapp/orgajs][GitHub - orgapp/orgajs: parse org-mode content into AST]]
 
 *** Code block
 C-c C-, - hitting s for source
