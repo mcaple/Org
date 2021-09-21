@@ -22,7 +22,7 @@ Some potential key positions
 | H   | #     | *H*ash               |
 | I   | \vert | p*I*pe               |
 | J   |       |                      |
-| K   | BKSPC | bac*K*space          |
+| K   | BKSP  | bac*K*space          |
 | L   | <     | *L*ess than          |
 | M   | ,     | co*M**M*a            |
 | N   | \     | /diagonal line on N/ |
