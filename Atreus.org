@@ -12,7 +12,7 @@ Some potential key positions
 
 | Chr | Key   | Description          |
 |-----+-------+----------------------|
-| A   | @     | *A*                  |
+| A   | @     | /A/t                 |
 | B   | `     | *B*acktick           |
 | C   | ^     | *C*aret              |
 | D   | $     | *D*ollar             |
