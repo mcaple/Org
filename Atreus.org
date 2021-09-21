@@ -1,0 +1,40 @@
+#+title: Atreus.org
+#+description: Somewhere I can save the key mappings I use for my Atreus.
+#+author: Mark Caple
+
+** Introduction
+This is where I will maintain all the useful key mappings that I find along the way.
+
+
+** Atreus
+
+Some potential key positions
+
+| Chr | Key   | Description          |
+|-----+-------+----------------------|
+| A   | @     | *A*t                 |
+| B   | `     | *B*acktick           |
+| C   | ^     | *C*aret              |
+| D   | $     | *D*ollar             |
+| E   | =     | *E*qual              |
+| F   | .     | *F*ullstop           |
+| G   | >     | *G*reater than       |
+| H   | #     | *H*ash               |
+| I   | \vert | p*I*pe               |
+| J   |       |                      |
+| K   | BKSPC | bac*K*space          |
+| L   | <     | *L*ess than          |
+| M   | ,     | co*M**M*a            |
+| N   | \     | /diagonal line on N/ |
+| O   | :     | c*O*lon              |
+| P   | %     | *P*ercent            |
+| Q   | '     | *Q*uote              |
+| R   |       |                      |
+| S   | ;     | *S*emi colon         |
+| T   | ~     | *T*ilde              |
+| U   | _     | *U*nderscore         |
+| V   |       |                      |
+| W   |       |                      |
+| X   | *     | asteri*X*            |
+| Y   | !     | *Y*ell               |
+| Z   | /     | /diagonal line on Z/ |
