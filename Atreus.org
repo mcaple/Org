@@ -5,37 +5,35 @@
 ** Introduction
 This is where I will maintain all the useful key mappings for my [[https://shop.keyboard.io/products/keyboardio-atreus][Keyboardio Atreus]] that I find along the way.
 
-How @@html:<b>a@@html:</b>re you
-
 ** Atreus
 
 Some potential key positions
 
 | Chr | Key   | Description          |
 |-----+-------+----------------------|
-| A   | @     | /A/t                 |
-| B   | `     | *B*acktick           |
-| C   | ^     | *C*aret              |
-| D   | $     | *D*ollar             |
-| E   | =     | *E*qual              |
-| F   | .     | *F*ullstop           |
-| G   | >     | *G*reater than       |
-| H   | #     | *H*ash               |
-| I   | \vert | p*I*pe               |
+| A   | @     | At                   |
+| B   | `     | Backtick             |
+| C   | ^     | Caret                |
+| D   | $     | Dollar               |
+| E   | =     | Equal                |
+| F   | .     | Fullstop             |
+| G   | >     | Greater than         |
+| H   | #     | Hash                 |
+| I   | \vert | pIpe                 |
 | J   |       |                      |
-| K   | BKSP  | bac*K*space          |
-| L   | <     | *L*ess than          |
-| M   | ,     | co*M**M*a            |
+| K   | BKSP  | bacKspace            |
+| L   | <     | Less than            |
+| M   | ,     | coMMa                |
 | N   | \     | /diagonal line on N/ |
-| O   | :     | c*O*lon              |
-| P   | %     | *P*ercent            |
-| Q   | '     | *Q*uote              |
+| O   | :     | cOlon                |
+| P   | %     | Percent              |
+| Q   | '     | Quote                |
 | R   |       |                      |
-| S   | ;     | *S*emi colon         |
-| T   | ~     | *T*ilde              |
-| U   | _     | *U*nderscore         |
+| S   | ;     | Semi colon           |
+| T   | ~     | Tilde                |
+| U   | _     | Underscore           |
 | V   |       |                      |
 | W   |       |                      |
-| X   | *     | asteri*X*            |
-| Y   | !     | *Y*ell               |
+| X   | *     | asteriX              |
+| Y   | !     | Yell                 |
 | Z   | /     | /diagonal line on Z/ |
