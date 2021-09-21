@@ -3,7 +3,7 @@
 #+author: Mark Caple
 
 ** Introduction
-This is where I will maintain all the useful key mappings that I find along the way.
+This is where I will maintain all the useful key mappings for my [[https://shop.keyboard.io/products/keyboardio-atreus][Keyboardio Atreus]] that I find along the way.
 
 
 ** Atreus
@@ -12,7 +12,7 @@ Some potential key positions
 
 | Chr | Key   | Description          |
 |-----+-------+----------------------|
-| A   | @     | *A*t                 |
+| A   | @     | *A*                  |
 | B   | `     | *B*acktick           |
 | C   | ^     | *C*aret              |
 | D   | $     | *D*ollar             |
