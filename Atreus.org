@@ -41,4 +41,4 @@ Some potential key positions
 
 Another option is to keep the original design and use [[https://geekhack.org/index.php?topic=69169.msg3086459#msg3086459][Hasu's USB-USB Converter]]
 
-This will allow me to retain my trained memory muscle on a standard keyboard. It is available [[here][https://github.com/mcaple/tmk_keyboard/wiki/Keymap-examples#atreus-like-layout]]
+This will allow me to retain my trained memory muscle on a standard keyboard. It is available [[https://github.com/mcaple/tmk_keyboard/wiki/Keymap-examples#atreus-like-layout][here]]
